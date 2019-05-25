@@ -1,6 +1,8 @@
 package online.jdao.java;
 
 import online.jdao.java.render.*;
+import org.joml.AxisAngle4f;
+import org.joml.Quaternionf;
 import org.joml.Vector3f;
 import org.lwjgl.glfw.GLFWKeyCallbackI;
 
@@ -12,7 +14,7 @@ public class Game implements MouseInput {
     Window w;
     FrequencyLimiter fpsLimiter, upsLimiter;
     final float moveV = 0.3f;
-    Item gun;
+    FileItem gun;
 
     Game() {
         w = new Window("Shooting Game");
@@ -27,6 +29,7 @@ public class Game implements MouseInput {
 
         w.setMouseCallback(this);
         gun = new FileItem("Pistola38.obj");
+        gun.ratio = 1.5f;
         w.sence = new Sence();
         w.sence.items.add(gun);
         w.sence.skybox = new SkyBox(
@@ -46,6 +49,7 @@ public class Game implements MouseInput {
             if (fpsLimiter.limit()) {
                 if (w.render()) break;
                 input();
+                gun.rot.setAngleAxis(Math.toRadians(w.cam.Yaw - 90), 0, -1, 0);
             }
             if (upsLimiter.limit())
                 tick();
@@ -90,6 +94,5 @@ public class Game implements MouseInput {
 
         w.cam.Pitch += yoffset;
         w.cam.Yaw += xoffset;
-//        System.out.println("X:" + xoffset + "\tY:" + yoffset);
     }
 }

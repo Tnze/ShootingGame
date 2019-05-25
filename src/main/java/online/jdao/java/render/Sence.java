@@ -10,13 +10,16 @@ import java.nio.FloatBuffer;
 import java.util.HashSet;
 import java.util.Set;
 
+import static org.lwjgl.glfw.GLFW.glfwGetTime;
 import static org.lwjgl.opengl.GL33C.*;
 
 public class Sence {
     ShaderProgram sp, sky;
-    public Item skybox;
+    public SkyBox skybox;
     int skyUniProjection, skyUniView;
     int uniProjection, uniView, uniModel;
+    int uniRatio;
+    int uniCamPos;
     public Set<Item> items = new HashSet<Item>();
     FloatBuffer fb = BufferUtils.createFloatBuffer(16);
 
@@ -42,9 +45,11 @@ public class Sence {
         vertShader.delete();
         fragShader.delete();
 
+        uniRatio = sp.GetUniformLocation("mRatio");
         uniProjection = sp.GetUniformLocation("projection");
         uniView = sp.GetUniformLocation("view");
         uniModel = sp.GetUniformLocation("model");
+        uniCamPos = sp.GetUniformLocation("cameraPos");
 
         skyUniProjection = sky.GetUniformLocation("projection");
         skyUniView = sky.GetUniformLocation("view");
@@ -52,14 +57,17 @@ public class Sence {
 
     protected void render(Camera cam) {
         sp.Use();
-        glUniformMatrix4fv(uniProjection, false, cam.getProjection().get(fb));
-        glUniformMatrix4fv(uniView, false, cam.getView().get(fb));
+        glBindTexture(GL_TEXTURE_CUBE_MAP, skybox.texture);                             //绑定环境纹理
+        glUniformMatrix4fv(uniProjection, false, cam.getProjection().get(fb));//设置透视矩阵
+        glUniformMatrix4fv(uniView, false, cam.getView().get(fb));            //设置摄像机矩阵
+        glUniform3f(uniCamPos, cam.pos.x(), cam.pos.y(), cam.pos.z());
         for (Item item : items) {
-            Matrix4f model = new Matrix4f().
+            glUniform1f(uniRatio, item.ratio());                                  //折射率
+            Matrix4f model = new Matrix4f().                                    //设置model矩阵
                     rotate(item.rot).
                     translateLocal(item.pos);
             glUniformMatrix4fv(uniModel, false, model.get(fb));
-            item.Draw();
+            item.Draw();                                                        //绘制这个物品
         }
 
         sky.Use();

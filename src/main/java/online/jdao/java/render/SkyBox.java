@@ -127,4 +127,8 @@ public class SkyBox implements Item {
         glDepthMask(true);
         glDepthFunc(GL_LESS);
     }
+
+    public float ratio() {
+        return 1.0f;
+    }
 }

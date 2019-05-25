@@ -82,4 +82,8 @@ public class TestItem implements Item {
     public Quaternionfc getRot() {
         return rot;
     }
+
+    public float ratio() {
+        return 1.2f;
+    }
 }
