@@ -6,24 +6,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="300bc44c-bc5c-4800-860d-080ef28e83e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/RayAABB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/SkyBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/SkyBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/TestItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/TestItem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/glsl/main.frag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/glsl/main.frag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/modules/Pistola38.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/ShootingGame.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/glsl/main.frag" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/glsl/main.frag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/FileItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/FileItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Sence.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Sence.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Shader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Shader.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/ShaderProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/ShaderProgram.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/SkyBox.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/SkyBox.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/TestItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/TestItem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Window.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/online/jdao/java/render/Window.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,94 +38,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getCode#0;class#Sence#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1981#1982#0" expanded="true" />
-                <element signature="e#2009#2010#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/TestItem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="52" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2452#2453#0" expanded="true" />
-                <element signature="e#2478#2479#0" expanded="true" />
-                <element signature="e#2514#2515#0" expanded="true" />
-                <element signature="e#2540#2541#0" expanded="true" />
-                <element signature="e#2568#2569#0" expanded="true" />
-                <element signature="e#2595#2596#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/SkyBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="130" selection-start-line="130" selection-end-line="130" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-844">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4147#4148#0" expanded="true" />
-                <element signature="e#4181#4182#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/RayAABB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+            <state relative-caret-position="120">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3269#3270#0" expanded="true" />
+                <element signature="method#isRectIntersect#0;class#RayAABB#0" />
+                <element signature="method#isLineSegmentExclusive#0;class#RayAABB#0" />
+                <element signature="e#1827#1828#0" expanded="true" />
+                <element signature="e#1867#1868#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,20 +106,22 @@
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/FrequencyLimiter.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/MouseInput.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/glsl/sky.frag" />
         <option value="$PROJECT_DIR$/src/main/resources/glsl/sky.vert" />
         <option value="$PROJECT_DIR$/src/main/resources/glsl/main.vert" />
-        <option value="$PROJECT_DIR$/src/main/resources/glsl/main.frag" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Camera.java" />
-        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/TestItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/SkyBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java" />
+        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/Monster.java" />
         <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/glsl/main.frag" />
+        <option value="$PROJECT_DIR$/src/main/java/online/jdao/java/RayAABB.java" />
       </list>
     </option>
   </component>
@@ -216,6 +140,12 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="ShootingGame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="ShootingGame" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="resources" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -278,25 +208,6 @@
               <item name="ShootingGame" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="render" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShootingGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShootingGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="render" type="462c0819:PsiDirectoryNode" />
-              <item name="Window.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="ShootingGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShootingGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,14 +217,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="glsl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ShootingGame" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ShootingGame" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ShootingGame" type="b2602c69:ProjectViewProjectNode" />
@@ -381,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558759149165</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="让枪跟随视角转动">
+      <created>1558764617239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1558764617239</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -397,7 +307,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21728595" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21728595" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -406,7 +316,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -427,57 +337,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="让枪跟随视角转动" />
+    <option name="LAST_COMMIT_MESSAGE" value="让枪跟随视角转动" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/3.2.2/lwjgl-3.2.2-sources.jar!/org/lwjgl/PointerBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="346" column="6" lean-forward="true" selection-start-line="346" selection-start-column="6" selection-end-line="346" selection-end-column="6" />
-          <folding>
-            <element signature="e#2667#2668#0" expanded="true" />
-            <element signature="e#2768#2769#0" expanded="true" />
-            <element signature="e#4678#4679#0" expanded="true" />
-            <element signature="e#4760#4761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-assimp/3.2.2/lwjgl-assimp-3.2.2-sources.jar!/org/lwjgl/assimp/AIScene.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3423">
-          <caret line="424" column="42" selection-start-line="424" selection-start-column="42" selection-end-line="424" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="71" column="33" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl/3.2.2/lwjgl-3.2.2-sources.jar!/org/lwjgl/system/NativeResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-opengl/3.2.2/lwjgl-opengl-3.2.2-sources.jar!/org/lwjgl/opengl/GL15C.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="233" column="23" selection-start-line="233" selection-start-column="23" selection-end-line="233" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/nio/FloatBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="261" column="21" lean-forward="true" selection-start-line="261" selection-start-column="21" selection-end-line="261" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-assimp/3.2.2/lwjgl-assimp-3.2.2-sources.jar!/org/lwjgl/assimp/AIVector3D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -531,17 +394,6 @@
           <folding>
             <element signature="e#12294#12295#0" expanded="true" />
             <element signature="e#12342#12343#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="252" column="38" lean-forward="true" selection-start-line="252" selection-start-column="38" selection-end-line="252" selection-end-column="38" />
-          <folding>
-            <element signature="e#9618#9619#0" expanded="true" />
-            <element signature="e#9668#9669#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -634,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/modules/Pistola38.mtl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -683,13 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/glsl/main.frag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/Quaternionf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -728,59 +566,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.2.2/lwjgl-glfw-3.2.2-sources.jar!/org/lwjgl/glfw/GLFW.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="3787" column="158" selection-start-line="3787" selection-start-column="158" selection-end-line="3787" selection-end-column="158" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Camera.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-844">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4147#4148#0" expanded="true" />
-            <element signature="e#4181#4182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getCode#0;class#Sence#0" />
           </folding>
         </state>
       </provider>
@@ -795,10 +586,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/Vector3f.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2236">
+          <caret line="636" column="7" selection-start-line="636" selection-start-column="7" selection-end-line="636" selection-end-column="13" />
+          <folding>
+            <element signature="e#2945#2946#0" expanded="true" />
+            <element signature="e#2983#2984#0" expanded="true" />
+            <element signature="e#18490#18491#0" expanded="true" />
+            <element signature="e#18532#18533#0" expanded="true" />
+            <element signature="e#31329#31330#0" expanded="true" />
+            <element signature="e#31376#31377#0" expanded="true" />
+            <element signature="e#39305#39306#0" expanded="true" />
+            <element signature="e#39362#39363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/TestItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="51" column="17" selection-start-line="51" selection-start-column="17" selection-end-line="52" selection-end-column="23" />
+        <state relative-caret-position="839">
+          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2452#2453#0" expanded="true" />
@@ -811,40 +619,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        <state relative-caret-position="315">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1981#1982#0" expanded="true" />
-            <element signature="e#2009#2010#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/Vector3f.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Sence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="65" column="56" selection-start-line="65" selection-start-column="56" selection-end-line="65" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getCode#0;class#Sence#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.2.2/lwjgl-glfw-3.2.2-sources.jar!/org/lwjgl/glfw/GLFWMouseButtonCallbackI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="51" column="89" lean-forward="true" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/FileItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-527">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/lwjgl/lwjgl-glfw/3.2.2/lwjgl-glfw-3.2.2-sources.jar!/org/lwjgl/glfw/GLFW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="3757" column="161" selection-start-line="3757" selection-start-column="161" selection-end-line="3757" selection-end-column="161" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/Monster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
-          <caret line="1250" column="17" selection-start-line="1250" selection-start-column="17" selection-end-line="1250" selection-end-column="17" />
+          <caret line="805" column="25" selection-start-line="805" selection-start-column="25" selection-end-line="805" selection-end-column="25" />
           <folding>
-            <element signature="e#18490#18491#0" expanded="true" />
-            <element signature="e#18532#18533#0" expanded="true" />
-            <element signature="e#31329#31330#0" expanded="true" />
-            <element signature="e#31376#31377#0" expanded="true" />
-            <element signature="e#39305#39306#0" expanded="true" />
-            <element signature="e#39362#39363#0" expanded="true" />
+            <element signature="e#9618#9619#0" expanded="true" />
+            <element signature="e#9668#9669#0" expanded="true" />
+            <element signature="e#33242#33243#0" expanded="true" />
+            <element signature="e#33327#33328#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/glsl/main.frag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="61" column="48" selection-start-line="61" selection-start-column="48" selection-end-line="61" selection-end-column="48" />
+        <state relative-caret-position="197">
+          <caret line="93" column="91" selection-start-line="93" selection-start-column="91" selection-end-line="93" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3269#3270#0" expanded="true" />
+            <element signature="e#537#546#0" expanded="true" />
+            <element signature="method#input#0;class#Game#0" />
+            <element signature="e#2400#2735#0" />
+            <element signature="n#!!block;n#close#0;n#Game#0" />
+            <element signature="e#4281#4282#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/render/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="102" lean-forward="true" selection-start-line="102" selection-end-line="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/Rectanglef.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/Rectangled.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/joml/joml/1.9.14/joml-1.9.14-sources.jar!/org/joml/LineSegmentd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/online/jdao/java/RayAABB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#isRectIntersect#0;class#RayAABB#0" />
+            <element signature="method#isLineSegmentExclusive#0;class#RayAABB#0" />
+            <element signature="e#1827#1828#0" expanded="true" />
+            <element signature="e#1867#1868#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -16,7 +16,7 @@ import static org.lwjgl.opengl.GL33C.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
-public class Window implements AutoCloseable{
+public class Window implements AutoCloseable {
     final boolean PolygonMode = false;
 
     long window;
@@ -116,8 +116,12 @@ public class Window implements AutoCloseable{
         cam = new Camera(width, height);
     }
 
-    public void setMouseCallback(GLFWCursorPosCallbackI input) {
+    public void setMouseMoveCallback(GLFWCursorPosCallbackI input) {
         glfwSetCursorPosCallback(window, input);
+    }
+
+    public void setMouseButtonCallback(GLFWMouseButtonCallbackI input) {
+        glfwSetMouseButtonCallback(window, input);
     }
 
     /**

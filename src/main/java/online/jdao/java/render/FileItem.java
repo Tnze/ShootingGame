@@ -16,6 +16,8 @@ public class FileItem implements Item {
     int vao, vbo, ebo;
     int numVert, numIndex;
     public float scale, ratio;
+    public Vector3f pos = new Vector3f(0, 0, 0);
+    public Quaternionf rot = new Quaternionf(new AxisAngle4f());
 
     public FileItem(String name) {
         AIScene scene = this.getScene(name);
