@@ -4,32 +4,33 @@ import online.jdao.java.render.*;
 import org.joml.AxisAngle4f;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;
+import org.lwjgl.glfw.GLFWCursorPosCallbackI;
 import org.lwjgl.glfw.GLFWKeyCallbackI;
 
 import java.io.IOException;
 
 import static org.lwjgl.glfw.GLFW.*;
 
-public class Game implements MouseInput {
+public class Game implements AutoCloseable {
     Window w;
     FrequencyLimiter fpsLimiter, upsLimiter;
     final float moveV = 0.3f;
     FileItem gun;
 
-    Game() {
+    public Game() {
         w = new Window("Shooting Game");
-
         fpsLimiter = new FrequencyLimiter(0);
         upsLimiter = new FrequencyLimiter(1.0 / 20);
     }
 
 
+    final Vector3f up = new Vector3f(0,1,0);
     public void run() throws IOException {
         w.start();
-
-        w.setMouseCallback(this);
+        w.setMouseCallback(mouseListener);
         gun = new FileItem("Pistola38.obj");
         gun.ratio = 1.5f;
+        gun.scale = 0.01f;
         w.sence = new Sence();
         w.sence.items.add(gun);
         w.sence.skybox = new SkyBox(
@@ -48,19 +49,26 @@ public class Game implements MouseInput {
         while (true) {                      //The Game Loop
             if (fpsLimiter.limit()) {
                 if (w.render()) break;
+
                 input();
-                gun.rot.setAngleAxis(Math.toRadians(w.cam.Yaw - 90), 0, -1, 0);
+                gun.rot.setAngleAxis(Math.toRadians(w.cam.Yaw - 90), 0, -1, 0).
+                        rotateX((float) Math.toRadians(90));
+                Vector3f front = new Vector3f(w.cam.front).mul(0.5f);
+                Vector3f right = new Vector3f(front).cross(up);
+                gun.pos.set(w.cam.pos).
+                        add(front).                 //向前
+                        add(right.mul(0.3f)).       //向右一点
+                        add(0,-0.2f,0);   //向下一点
+
             }
             if (upsLimiter.limit())
                 tick();
 
             System.out.print("\rfps: " + fpsLimiter.getCPS() + "\tups: " + upsLimiter.getCPS());
         }
-        w.dispose();
     }
 
     private void tick() {
-
     }
 
     private void input() {
@@ -81,8 +89,7 @@ public class Game implements MouseInput {
 
     double lastX = 400, lastY = 300;
 
-    @Override
-    public void onMouseMove(double xpos, double ypos) {
+    private GLFWCursorPosCallbackI mouseListener = (window, xpos, ypos) -> {
         double xoffset = xpos - lastX;
         double yoffset = lastY - ypos; // 注意这里是相反的，因为y坐标是从底部往顶部依次增大的
         lastX = xpos;
@@ -94,5 +101,9 @@ public class Game implements MouseInput {
 
         w.cam.Pitch += yoffset;
         w.cam.Yaw += xoffset;
+    };
+
+    public void close() {
+        w.close();
     }
 }

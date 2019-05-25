@@ -9,6 +9,9 @@ public interface Item {
     Quaternionf rot = new Quaternionf(new AxisAngle4f());
 
     public void Draw();
+
     public float ratio();
+
+    public Matrix4f model();
 
 }

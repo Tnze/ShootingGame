@@ -62,11 +62,8 @@ public class Sence {
         glUniformMatrix4fv(uniView, false, cam.getView().get(fb));            //设置摄像机矩阵
         glUniform3f(uniCamPos, cam.pos.x(), cam.pos.y(), cam.pos.z());
         for (Item item : items) {
-            glUniform1f(uniRatio, item.ratio());                                  //折射率
-            Matrix4f model = new Matrix4f().                                    //设置model矩阵
-                    rotate(item.rot).
-                    translateLocal(item.pos);
-            glUniformMatrix4fv(uniModel, false, model.get(fb));
+            glUniform1f(uniRatio, item.ratio());                                //折射率
+            glUniformMatrix4fv(uniModel, false, item.model().get(fb));//设置model矩阵
             item.Draw();                                                        //绘制这个物品
         }
 

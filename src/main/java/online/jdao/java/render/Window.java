@@ -16,14 +16,13 @@ import static org.lwjgl.opengl.GL33C.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
-public class Window {
+public class Window implements AutoCloseable{
     final boolean PolygonMode = false;
 
     long window;
     int width, height;
     public Sence sence;
     public Camera cam;
-    MouseInput mouseInput;
 
     FloatBuffer fb = BufferUtils.createFloatBuffer(16);
 
@@ -66,10 +65,6 @@ public class Window {
                 glfwSetWindowShouldClose(window, true); // We will detect this in the rendering loop
         });
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-        glfwSetCursorPosCallback(window, (window, xpos, ypos) -> {
-            if (mouseInput != null)
-                mouseInput.onMouseMove(xpos, ypos);
-        });
         glfwSetFramebufferSizeCallback(window, (window, w, h) -> {
             glViewport(0, 0, w, h);
             this.width = w;
@@ -121,8 +116,8 @@ public class Window {
         cam = new Camera(width, height);
     }
 
-    public void setMouseCallback(MouseInput input) {
-        mouseInput = input;
+    public void setMouseCallback(GLFWCursorPosCallbackI input) {
+        glfwSetCursorPosCallback(window, input);
     }
 
     /**
@@ -140,7 +135,7 @@ public class Window {
         return glfwWindowShouldClose(window);
     }
 
-    public void dispose() {
+    public void close() {
         glfwDestroyWindow(window);
         glfwTerminate();
     }

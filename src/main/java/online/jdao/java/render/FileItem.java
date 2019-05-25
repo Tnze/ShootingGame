@@ -1,10 +1,7 @@
 package online.jdao.java.render;
 
 
-import org.joml.AxisAngle4f;
-import org.joml.Quaternionf;
-import org.joml.Quaternionfc;
-import org.joml.Vector3f;
+import org.joml.*;
 import org.lwjgl.assimp.*;
 import org.lwjgl.system.MemoryUtil;
 
@@ -18,7 +15,7 @@ import static org.lwjgl.assimp.Assimp.*;
 public class FileItem implements Item {
     int vao, vbo, ebo;
     int numVert, numIndex;
-    public float ratio;
+    public float scale, ratio;
 
     public FileItem(String name) {
         AIScene scene = this.getScene(name);
@@ -80,5 +77,13 @@ public class FileItem implements Item {
             System.exit(2);
         }
         return scene;
+    }
+
+
+    public Matrix4f model() {
+        return new Matrix4f().
+                scale(scale).
+                rotate(rot).
+                translateLocal(pos);
     }
 }

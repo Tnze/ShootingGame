@@ -1,10 +1,7 @@
 package online.jdao.java.render;
 
 
-import org.joml.AxisAngle4f;
-import org.joml.Quaternionf;
-import org.joml.Quaternionfc;
-import org.joml.Vector3f;
+import org.joml.*;
 
 import static org.lwjgl.opengl.GL33C.*;
 
@@ -53,6 +50,7 @@ public class TestItem implements Item {
             -0.5f, 0.5f, -0.5f, 0.0f, 1.0f
     };
     int vao, vbo;
+    float scale, ratio;
 
     public TestItem() {
         vao = glGenVertexArrays();
@@ -84,6 +82,13 @@ public class TestItem implements Item {
     }
 
     public float ratio() {
-        return 1.2f;
+        return ratio;
+    }
+
+    public Matrix4f model() {
+        return new Matrix4f().
+                scale(scale).
+                rotate(rot).
+                translateLocal(pos);
     }
 }

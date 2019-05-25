@@ -1,6 +1,7 @@
 package online.jdao.java.render;
 
 
+import org.joml.Matrix4f;
 import org.lwjgl.system.MemoryStack;
 
 import java.nio.ByteBuffer;
@@ -10,7 +11,7 @@ import static org.lwjgl.opengl.GL33C.*;
 import static org.lwjgl.stb.STBImage.*;
 import static org.lwjgl.system.MemoryStack.stackPush;
 
-public class SkyBox implements Item {
+public class SkyBox {
     int texture;
 
     float vertices[] = {
@@ -128,7 +129,4 @@ public class SkyBox implements Item {
         glDepthFunc(GL_LESS);
     }
 
-    public float ratio() {
-        return 1.0f;
-    }
 }
