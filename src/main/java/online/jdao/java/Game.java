@@ -20,6 +20,7 @@ public class Game implements AutoCloseable {
     final float moveV = 0.3f;
     FileItem gun;
     Set<Monster> monsters = new HashSet<Monster>();
+    Set<Bullet> bullets = new HashSet<Bullet>();
 
     public Game() {
         w = new Window("Shooting Game");
@@ -41,6 +42,7 @@ public class Game implements AutoCloseable {
 
         w.sence = new Sence();
         w.sence.items.add(gun);
+//        w.sence.items.add(new TestItem());
         w.sence.skybox = new SkyBox(
                 "right.jpg",
                 "left.jpg",
@@ -85,7 +87,7 @@ public class Game implements AutoCloseable {
 
 
     private void tick() {
-        if (Math.random() < 1.0 / 40) {
+        if (Math.random() < 1.0 / 40) {//刷怪
             Monster m = new Monster();
             monsters.add(m);
             m.join(w);
@@ -93,8 +95,30 @@ public class Game implements AutoCloseable {
             m.pos = new Vector3f(w.cam.pos).
                     add((float) Math.random() * 50 + 50, 0, (float) Math.random() * 50 + 50);
         }
-        for (Monster m : monsters)
+        for (Monster m : monsters) {//怪物移动
             m.tick(new Vector3f(w.cam.pos).sub(0, 3, 0));
+        }
+        Object[] buls = bullets.toArray();
+        for (Object b : buls){
+            ((Bullet) b).tick();
+            if ( new Vector3f(((Bullet) b).pos).sub(w.cam.pos).length()>100)
+            {
+                bullets.remove(b);
+                w.sence.items.remove(b);
+            }
+        }
+        Object[] mons = monsters.toArray();
+        buls = bullets.toArray();
+        for (Object m : mons) {
+            AABB box = ((Monster) m).box();
+            for (Object b : buls)
+                if (box.inside(((Bullet) b).pos)) {
+                    bullets.remove(b);
+                    monsters.remove(m);
+                    w.sence.items.remove(b);
+                    w.sence.items.remove(m);
+                }
+        }
     }
 
     private void input() {
@@ -130,8 +154,12 @@ public class Game implements AutoCloseable {
     };
 
     private GLFWMouseButtonCallbackI mouseButtonListener = (window, button, action, mods) -> {
-        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+        if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) {
             gunRot = 30;
+            Bullet b = new Bullet(w.cam.pos, w.cam.front);
+            bullets.add(b);
+            w.sence.items.add(b);
+        }
     };
 
     public void close() {

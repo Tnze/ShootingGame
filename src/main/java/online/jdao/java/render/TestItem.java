@@ -50,7 +50,7 @@ public class TestItem implements Item {
             -0.5f, 0.5f, -0.5f, 0.0f, 1.0f
     };
     int vao, vbo;
-    float scale, ratio;
+    float scale = 0.5f, ratio = 1.5f;
 
     public TestItem() {
         vao = glGenVertexArrays();
@@ -70,7 +70,7 @@ public class TestItem implements Item {
     }
 
 
-    Vector3f pos = new Vector3f(0, 0, 0);
+    public Vector3f pos = new Vector3f(0, 0, 0);
     Quaternionf rot = new Quaternionf(new AxisAngle4f(0, 1, 0, 0));
 
     public Vector3f getPos() {

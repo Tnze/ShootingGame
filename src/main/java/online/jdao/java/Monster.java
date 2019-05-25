@@ -2,7 +2,6 @@ package online.jdao.java;
 
 import online.jdao.java.render.FileItem;
 import online.jdao.java.render.Window;
-import org.joml.Quaternionf;
 import org.joml.Vector3f;
 
 public class Monster extends FileItem {
@@ -28,5 +27,11 @@ public class Monster extends FileItem {
 
     public void tick(Vector3f target) {
         pos.add(target.sub(pos).normalize().mul(0.5f));
+    }
+
+    public AABB box() {
+        return new AABB(
+                new Vector3f(pos).add(0, 1.5f, 3),
+                6);
     }
 }
